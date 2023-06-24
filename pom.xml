@@ -95,13 +95,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://52.207.212.204:8081/repository/landmark-release/</url>
+	      <url>http://44.204.167.127:8081/repository/landmark-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://52.207.212.204:8081/repository/landmark-snapshot/</url>
+	      <url>http://44.204.167.127:8081/repository/landmark-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
