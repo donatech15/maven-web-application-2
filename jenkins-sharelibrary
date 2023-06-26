@@ -1,0 +1,28 @@
+@Library('LandmarkSS-sharedlibs') _
+pipeline {
+agent any
+stages{
+stage('CheckoutCode')
+{
+steps
+{
+git branch: 'development', credentialsId: '6773dc34-a3fd-44ec-b1ee3d2f0aa9f346', url: https://github.com/LandmakTechnology/maven-webapplication.git'}
+}
+}
+stage("Build"){
+steps{
+stages("Build")
+}
+}
+stage("Execute SonarQube Report"){
+steps{
+stages("SonarQube Report")
+}
+}
+stage("Upload Artifacts Into Nexus"){
+steps{
+stages("Upload Into Nexus")
+}
+}
+}// Stages Close
+} // Pipeline Close
